@@ -55,7 +55,7 @@ FROM Departamentos);
 
 --14
 SELECT Departamentos.Nombre
-From Departamentos INNER JOIN Empleados ON Departamento.Codigo = Empleados.Departamentos
+From Departamentos INNER JOIN Empleados ON Departamentos.Codigo = Empleados.Departamento
 GROUP BY Departamentos.Nombre
 HAVING (COUNT(Empleados.Departamento))>2;
 
